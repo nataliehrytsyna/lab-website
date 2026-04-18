@@ -1,33 +1,76 @@
-:root {
-  --bg: #ffffff;
-  --bg2: #f8f9fa;
-  --card: rgba(0, 0, 0, 0.04);
-  --card-border: rgba(0, 0, 0, 0.08);
-  --text: #1a1a1a;
-  --muted: #666666;
-  --accent: #0066cc;
-  --accent-2: #6366f1;
+.* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Update all rgba values for backgrounds, borders, and overlays */
-/* Example update for background and border colors */
-.background-class {
-  background-color: rgba(0, 0, 0, 0.1);
+html {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.border-class {
-  border-color: rgba(0, 0, 0, 0.2);
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Update button colors and adjust shadows and gradients for light theme */
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #61dafb;
+    padding: 1rem;
+}
+
+nav a {
+    color: #282c34;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 button {
-  background-color: #0066cc;
-  color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
-/* Additional updates for shadows and gradients if needed */
-/* Example gradient update */
-.gradient-class {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+button:hover {
+    background: #21a1f1;
 }
