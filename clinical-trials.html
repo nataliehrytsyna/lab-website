@@ -18,38 +18,53 @@
         <a href="clinical-trials.html">Clinical Trials</a>
         <a href="members.html">Lab Members</a>
       </nav>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <span class="eyebrow">Clinical Trials</span>
-      <h1>Current and upcoming studies</h1>
-      <p class="hero-text">
-        Explore active research studies, recruitment information, and collaboration opportunities.
-      </p>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Clinical Trials</span>
+        <h1 class="page-title">Current and upcoming studies</h1>
+        <p class="page-text">
+          Explore active and developing studies, recruitment details, and opportunities for collaboration.
+        </p>
+      </div>
+    </section>
 
-      <div class="feature-grid">
+    <section class="section">
+      <div class="container feature-grid">
         <article class="feature-card">
           <h3>Trial 1</h3>
-          <p>Short description, population, and status.</p>
+          <p>Include the study title, target population, current status, and a short summary of the trial's purpose.</p>
         </article>
         <article class="feature-card">
           <h3>Trial 2</h3>
-          <p>Short description, population, and status.</p>
+          <p>Include trial goals, intervention or study type, and whether recruitment is active, pending, or closed.</p>
         </article>
         <article class="feature-card">
           <h3>Eligibility</h3>
-          <p>Include criteria or contact instructions if appropriate.</p>
+          <p>Provide general eligibility criteria or indicate where participants or referring physicians can learn more.</p>
         </article>
         <article class="feature-card">
           <h3>Contact</h3>
-          <p>Email or form information for patients and collaborators.</p>
+          <p>Add a contact email, coordinator details, or a link for participants and collaborators to get in touch.</p>
         </article>
       </div>
-    </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2026 Your Lab Name. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="members.html">Members</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
