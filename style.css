@@ -255,7 +255,8 @@ a {
 
 .section-heading h2,
 .two-col h2,
-.contact-card h2 {
+.contact-card h2,
+.page-title {
   font-size: clamp(2rem, 4vw, 3rem);
   margin: 0 0 0.75rem;
   letter-spacing: -0.04em;
@@ -266,7 +267,8 @@ a {
 .two-col p,
 .contact-card p,
 .info-box p,
-.feature-card p {
+.feature-card p,
+.page-text {
   color: var(--muted);
   line-height: 1.8;
 }
@@ -315,6 +317,10 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+}
+
+.page-hero {
+  padding: 4rem 0 2rem;
 }
 
 .site-footer {
