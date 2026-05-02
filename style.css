@@ -414,3 +414,157 @@ a {
     max-width: 100%;
   }
 }
+.members-hero {
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.member-section {
+  padding-top: 2rem;
+}
+
+.pi-profile {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.pi-image-wrap {
+  width: 100%;
+}
+
+.pi-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+}
+
+.pi-text h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0.3rem 0 0.25rem;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.pi-text h3 {
+  margin: 0 0 1.1rem;
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.pi-text p {
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 720px;
+}
+
+.member-category {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.member-heading {
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.member-heading h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.member-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 22px;
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.member-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.placeholder-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(124, 58, 237, 0.08));
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.member-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.member-role {
+  margin: 0 0 0.8rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.member-bio {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.alumni-list {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.alumni-list p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 900px) {
+  .pi-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-profile {
+    padding: 1.25rem;
+  }
+}
