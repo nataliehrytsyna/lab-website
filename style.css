@@ -562,9 +562,26 @@ a {
 }
 
 @media (max-width: 640px) {
+
   .member-grid {
-    grid-template-columns: 1fr;
-  }
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.member-photo {
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.member-card {
+  text-align: center;
+}
 
   .pi-profile {
     padding: 1.25rem;
