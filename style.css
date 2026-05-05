@@ -490,7 +490,7 @@ a {
 .member-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
+  gap: 1.5rem;
 }
 
 .member-card {
@@ -503,10 +503,12 @@ a {
 
 .member-photo {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 18px;
-  margin-bottom: 1rem;
+  max-width: 180px;
+  height: 180px;
   object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 .placeholder-photo {
